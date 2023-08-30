@@ -1,15 +1,15 @@
-nav li {
+header nav li {
   display: inline-block;
   margin: 0 20px;
 }
 
-nav li a {
+header nav li a {
   text-decoration: none;
   color: black;
   font-size: 20px;
 }
 
-nav li a:hover {
+header nav li a:hover {
   color: #ff0000;
 }
 
@@ -19,10 +19,8 @@ h1 {
 }
 
 img {
-  position: absolute;
-  top: 20px;
   right: 20px;
-  width: 300px;
+  width: 200px;
   box-shadow: 3px 3px 5px 0;
 }
 
@@ -97,4 +95,10 @@ img {
 
 .allgemeines-p p:hover {
   transform: scale(1.5);
+  background-color: aqua;
+}
+
+footer {
+  text-align: center;
+  padding-top: 50px;
 }
