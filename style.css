@@ -1,3 +1,7 @@
+.seite-1 {
+  text-align: center;
+}
+
 header nav li {
   display: inline-block;
   margin: 0 20px;
@@ -18,17 +22,18 @@ h1 {
   text-align: center;
 }
 
+.img-ich {
+  text-align: center;
+  margin-bottom: 50px;
+}
 img {
-  right: 20px;
   width: 200px;
   box-shadow: 3px 3px 5px 0;
 }
 
 .allgemeines {
   text-align: center;
-  width: 80vw;
   border: 5px solid black;
-  margin: 0 50px;
 }
 
 .allgemeines-p {
