@@ -186,7 +186,8 @@ footer {
 
 table {
   width: 80vw;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.596);
+  font-size: 30px;
 }
 
 table,
@@ -194,4 +195,5 @@ tr,
 th,
 td {
   border: 1px solid black;
+  border-collapse: collapse;
 }
