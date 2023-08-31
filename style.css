@@ -1,5 +1,9 @@
-.seite-1 {
+body {
+  padding: 0;
+  margin: 0;
   text-align: center;
+  background-image: url(./pictures/keith-misner-h0Vxgz5tyXA-unsplash.jpg);
+  background-size: cover;
 }
 
 header nav li {
@@ -9,16 +13,37 @@ header nav li {
 
 header nav li a {
   text-decoration: none;
-  color: black;
+  color: gold;
   font-size: 20px;
 }
 
 header nav li a:hover {
-  color: #ff0000;
+  color: silver;
+}
+
+header .nav-1 {
+  position: fixed;
+  top: 0;
+  left: 20px;
+}
+
+header .nav-2 {
+  position: fixed;
+  top: 0;
+  right: 20px;
+}
+
+header .nav-2 a {
+  color: gold;
+  margin: 0 20px;
+}
+
+header .nav-2 a:hover {
+  color: silver;
 }
 
 h1 {
-  font-size: 120px;
+  font-size: 80px;
   text-align: center;
 }
 
@@ -29,21 +54,33 @@ h1 {
 img {
   width: 200px;
   box-shadow: 3px 3px 5px 0;
+  transition: transform 3s ease;
+}
+
+img:hover {
+  transform: scale(1.5);
 }
 
 .allgemeines {
   text-align: center;
-  border: 5px solid black;
+
+  margin: 50px;
+}
+
+.allgemeines h2 {
+  color: rgb(233, 233, 233);
+  font-size: 30px;
 }
 
 .allgemeines-p {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(4, 1fr);
   grid-template-areas:
-    "p1 p2 p3 p4"
-    " p5 p6 p7 p8"
-    "p9 p10 p11 p12";
+    "p1 p2 p3 p4 p5"
+    "p6 p7 p8 p9 p10"
+    "p11 p12 p13 p14 p15"
+    "p16 p17 p18 p19 p20";
 }
 
 .allgemeines p:nth-child(1) {
@@ -94,13 +131,47 @@ img {
   grid-area: p12;
 }
 
+.allgemeines p:nth-child(13) {
+  grid-area: p13;
+}
+
+.allgemeines p:nth-child(14) {
+  grid-area: p14;
+}
+
+.allgemeines p:nth-child(15) {
+  grid-area: p15;
+}
+
+.allgemeines p:nth-child(16) {
+  grid-area: p16;
+}
+
+.allgemeines p:nth-child(17) {
+  grid-area: p17;
+}
+
+.allgemeines p:nth-child(18) {
+  grid-area: p18;
+}
+
+.allgemeines p:nth-child(19) {
+  grid-area: p19;
+}
+
+.allgemeines p:nth-child(20) {
+  grid-area: p20;
+}
+
 .allgemeines-p p {
+  color: rgb(233, 233, 233);
   transition: transform 3s ease;
+  font-size: 20px;
 }
 
 .allgemeines-p p:hover {
   transform: scale(1.5);
-  background-color: aqua;
+  color: gold;
 }
 
 footer {
