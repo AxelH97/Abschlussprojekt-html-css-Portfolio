@@ -51,13 +51,13 @@ h1 {
   text-align: center;
   margin-bottom: 50px;
 }
-img {
+.img-ich img {
   width: 200px;
   box-shadow: 3px 3px 5px 0;
   transition: transform 3s ease;
 }
 
-img:hover {
+.img-ich img:hover {
   transform: scale(1.5);
 }
 
@@ -196,4 +196,52 @@ th,
 td {
   border: 1px solid black;
   border-collapse: collapse;
+}
+
+/* seite-3 */
+.serien {
+  padding: 0 50px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: lightgray;
+}
+.serien div img {
+  width: 500px;
+  height: 500px;
+  border-radius: 360px;
+  box-shadow: 3px 3px 5px 0;
+}
+
+.serien div img:hover {
+  transition: transform 5s ease;
+  transform: rotate(360deg);
+}
+
+.serien h2 {
+  margin-top: 140px;
+}
+
+.serien p {
+  padding: 50px;
+  font-size: 20px;
+}
+
+.manifest,
+.shadow-hunters,
+.elite {
+  margin-bottom: 100px;
+  display: flex;
+}
+
+.manifest {
+  /* margin-right: 20%; */
+}
+
+.elite {
+  /* margin-right: 13%; */
+}
+
+.shadow-hunters {
+  /* margin-right: 3%; */
 }
