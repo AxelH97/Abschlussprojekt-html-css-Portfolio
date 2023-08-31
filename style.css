@@ -178,3 +178,20 @@ footer {
   text-align: center;
   padding-top: 50px;
 }
+
+/* seite-2 */
+.table {
+  margin: 150px;
+}
+
+table {
+  width: 80vw;
+  background-color: white;
+}
+
+table,
+tr,
+th,
+td {
+  border: 1px solid black;
+}
