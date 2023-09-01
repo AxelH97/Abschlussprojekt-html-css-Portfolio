@@ -45,6 +45,9 @@ header .nav-2 a:hover {
 h1 {
   font-size: 80px;
   text-align: center;
+  color: orangered;
+  text-decoration: underline;
+  text-shadow: silver 5px 5px 9px;
 }
 
 .img-ich {
@@ -204,7 +207,6 @@ td {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  background-color: lightgray;
 }
 .serien div img {
   width: 500px;
@@ -220,11 +222,15 @@ td {
 
 .serien h2 {
   margin-top: 140px;
+  color: gold;
+  font-size: 40px;
+  text-decoration: underline;
 }
 
 .serien p {
   padding: 50px;
-  font-size: 20px;
+  margin: 20px;
+  font-size: 25px;
 }
 
 .manifest,
@@ -234,14 +240,19 @@ td {
   display: flex;
 }
 
-.manifest {
-  /* margin-right: 20%; */
+.serien p {
+  background-color: rgba(255, 255, 255, 0.326);
+  border-radius: 25px;
 }
 
-.elite {
-  /* margin-right: 13%; */
+.h2-m {
+  margin-left: 450px;
 }
 
-.shadow-hunters {
-  /* margin-right: 3%; */
+.h2-s {
+  margin-right: 500px;
+}
+
+.h2-e {
+  margin-left: 500px;
 }
