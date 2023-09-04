@@ -50,14 +50,12 @@ h1 {
 .img-ich {
   text-align: center;
   margin-bottom: 50px;
-}
-img {
   width: 200px;
   box-shadow: 3px 3px 5px 0;
   transition: transform 3s ease;
 }
 
-img:hover {
+.img-ich img:hover {
   transform: scale(1.5);
 }
 
@@ -174,18 +172,87 @@ img:hover {
   color: gold;
 }
 
-footer {
-  text-align: center;
-  padding-top: 50px;
+/* Seite-2 */
+
+.seite-2 img {
+  width: 200px;
+  height: 200px;
+  size: cover;
+  position: fixed;
+  box-shadow: 3px 3px 5px 0;
+  transition: -webkit-animation 3s ease;
 }
 
-/* seite-2 */
+.slide-right {
+  -webkit-animation: slide-right 10s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-right 10s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.slide-left {
+  -webkit-animation: slide-left 10s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-left 10s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+/* .slide-right {
+  -webkit-animation: slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.slide-left {
+  -webkit-animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+} */
+
+@-webkit-keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+    transform: translateX(-1000px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+.seite-2 img:nth-child(1) {
+  top: 150px;
+  left: 100px;
+}
+
+.seite-2 img:nth-child(2) {
+  top: 150px;
+  right: 100px;
+}
+
+.seite-2 img:nth-child(3) {
+  bottom: 60px;
+  left: 100px;
+}
+
+.seite-2 img:nth-child(4) {
+  bottom: 60px;
+  right: 100px;
+}
+
 .table {
-  margin: 150px;
+  display: flex;
+  justify-content: center;
+  margin-top: 12vw;
 }
 
 table {
-  width: 80vw;
+  width: 60vw;
   background-color: rgba(255, 255, 255, 0.596);
   font-size: 30px;
 }
