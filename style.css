@@ -184,13 +184,13 @@ h1 {
 }
 
 .slide-right {
-  -webkit-animation: slide-right 10s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-right 10s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation: slide-right 5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-right 5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .slide-left {
-  -webkit-animation: slide-left 10s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-left 10s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation: slide-left 5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-left 5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 /* .slide-right {
@@ -205,10 +205,10 @@ h1 {
 
 @-webkit-keyframes slide-right {
   0% {
-    -webkit-transform: translateX(1000px);
-    transform: translateX(1000px);
+    -webkit-transform: translateX(-350px);
+    transform: translateX(-350px);
   }
-  100% {
+  150% {
     -webkit-transform: translateX(0);
     transform: translateX(0);
   }
@@ -216,8 +216,8 @@ h1 {
 
 @keyframes slide-left {
   0% {
-    -webkit-transform: translateX(-1000px);
-    transform: translateX(-1000px);
+    -webkit-transform: translateX(350px);
+    transform: translateX(350px);
   }
   100% {
     -webkit-transform: translateX(0);
