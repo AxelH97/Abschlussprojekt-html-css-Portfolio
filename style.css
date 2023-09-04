@@ -62,12 +62,6 @@ img:hover {
   transform: scale(1.5);
 }
 
-.allgemeines {
-  text-align: center;
-
-  margin: 50px;
-}
-
 .allgemeines h2 {
   color: rgb(233, 233, 233);
   font-size: 30px;
@@ -83,7 +77,7 @@ img:hover {
     "p6 p7 p8 p9 p10"
     "p11 p12 p13 p14 p15"
     "p16 p17 p18 p19 p20";
-  margin: 0 50px;
+  margin: 0 100px;
 }
 
 .allgemeines p:nth-child(1) {
