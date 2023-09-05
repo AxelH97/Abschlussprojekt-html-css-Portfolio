@@ -378,14 +378,43 @@ footer a:hover {
   color: gold;
 }
 
-@media (max-width: 854px) {
+/* @media */
+
+@media (max-width: 420px) {
   header .nav-2 {
     display: none;
   }
-  header .nav-1 {
+
+  header .nav-1 li {
     margin: 0;
   }
-  /* .allgemeines-p {
+
+  .allgemeines-p {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-areas:
+      "p1 p2"
+      "p3 p4"
+      "p5 p6"
+      "p7 p8"
+      "p9 p10"
+      "p11 p12"
+      "p13 p14"
+      "p15 p16"
+      "p17 p18"
+      "p19 p20";
+  }
+}
+
+@media (min-width: 421px) and (max-width: 854px) {
+  header .nav-2 {
+    display: none;
+  }
+  header .nav-1 li {
+    margin: 5px;
+  }
+  .allgemeines-p {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(7, 1fr);
@@ -397,88 +426,7 @@ footer a:hover {
       "p13 p14 p15"
       "p16 p17 p18"
       "p19 . p20";
-    margin: 0 100px;
   }
-
-  .allgemeines p:nth-child(1) {
-    grid-area: p1;
-  }
-
-  .allgemeines p:nth-child(2) {
-    grid-area: p2;
-  }
-
-  .allgemeines p:nth-child(3) {
-    grid-area: p3;
-  }
-
-  .allgemeines p:nth-child(4) {
-    grid-area: p4;
-  }
-
-  .allgemeines p:nth-child(5) {
-    grid-area: p5;
-  }
-
-  .allgemeines p:nth-child(6) {
-    grid-area: p6;
-  }
-
-  .allgemeines p:nth-child(7) {
-    grid-area: p7;
-  }
-
-  .allgemeines p:nth-child(8) {
-    grid-area: p8;
-  }
-
-  .allgemeines p:nth-child(9) {
-    grid-area: p9;
-  }
-
-  .allgemeines p:nth-child(10) {
-    grid-area: p10;
-  }
-
-  .allgemeines p:nth-child(11) {
-    grid-area: p11;
-  }
-
-  .allgemeines p:nth-child(12) {
-    grid-area: p12;
-  }
-
-  .allgemeines p:nth-child(13) {
-    grid-area: p13;
-  }
-
-  .allgemeines p:nth-child(14) {
-    grid-area: p14;
-  }
-
-  .allgemeines p:nth-child(15) {
-    grid-area: p15;
-  }
-
-  .allgemeines p:nth-child(16) {
-    grid-area: p16;
-  }
-
-  .allgemeines p:nth-child(17) {
-    grid-area: p17;
-  }
-
-  .allgemeines p:nth-child(18) {
-    grid-area: p18;
-  }
-
-  .allgemeines p:nth-child(19) {
-    grid-area: p19;
-  }
-
-  .allgemeines p:nth-child(20) {
-    grid-area: p20;
-  } */
 }
 
 @media (min-width: 855px) {
