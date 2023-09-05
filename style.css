@@ -50,6 +50,7 @@ header .nav-2 a:hover {
 .h1 {
   display: flex;
   justify-content: center;
+  padding-top: 20px;
 }
 
 h1 {
@@ -387,10 +388,6 @@ footer a:hover {
 /* @media */
 
 @media (max-width: 420px) {
-  header .nav-1 {
-    position: absolute;
-  }
-
   header .nav-2 {
     display: none;
   }
@@ -420,13 +417,24 @@ footer a:hover {
   .seite-2 img {
     display: none;
   }
+
+  .manifest,
+  .shadow-hunters,
+  .elite {
+    padding: 0;
+  }
+
+  .serien p {
+    padding: 2px;
+    font-size: 15px;
+  }
+
+  .l-table {
+    font-size: 15px;
+  }
 }
 
 @media (min-width: 421px) and (max-width: 854px) {
-  header .nav-1 {
-    position: absolute;
-  }
-
   header .nav-2 {
     display: none;
   }
@@ -448,11 +456,6 @@ footer a:hover {
       "p16 p17 p18"
       "p19 . p20";
     margin: 0 1px;
-  }
-
-  .zutaten table {
-    padding: 50px;
-    width: 80vw;
   }
 
   .seite-2 img {
